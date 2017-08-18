@@ -1,0 +1,10 @@
+<div class="content" *ngIf="deviceOrientationSupported; else notSupported">
+  <protractor-cake [angle]="diff$ | async"></protractor-cake>
+
+  <button type="button" md-raised-button color="primary" (click)="onMeasureClick()">{{actionText$ | async}}</button>
+
+  <protractor-history [history]="history$ | async"></protractor-history>
+</div>
+<ng-template #notSupported>
+  Device orientation not supported on this device. Try visiting using your phone
+</ng-template>

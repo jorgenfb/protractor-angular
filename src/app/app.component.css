@@ -1,0 +1,19 @@
+:host {
+  max-width: 500px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+protractor-cake {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
